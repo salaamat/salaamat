@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هنرستان دخترانه سلامت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #A8DADC; /* آبی ملایم */
+            --secondary-color: #F1FAEE; /* کرم روشن */
+            --accent-color: #E63946; /* برای تاکید */
+            --text-color: #1D3557; /* سرمه‌ای تیره */
+            --card-bg: #FFFFFF;
+            --card-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            --hover-effect: scale(1.03);
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        p {
+            font-size: 1.4em;
+            margin-bottom: 50px;
+            color: #457B9D; /* آبی تیره‌تر */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px; /* ارتفاع کارت‌ها */
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: var(--hover-effect);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .card a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        .card:hover a {
+            color: var(--accent-color);
+        }
+        .icon {
+            font-size: 2em;
+            margin-left: 15px;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>هنرستان دخترانه سلامت</h1>
+        <p>مقصدی برای شکوفایی استعدادهای فنی و خلاق</p>
+        <div class="grid-container">
+            <div class="card">
+                <a href="shabake.html">
+                    <span class="icon">💻</span> رشته شبکه و نرم‌افزار
+                </a>
+            </div>
+            <div class="card">
+                <a href="naghashi.html">
+                    <span class="icon">🎨</span> رشته نقاشی
+                </a>
+            </div>
+            <div class="card">
+                <a href="memari.html">
+                    <span class="icon">🏠</span> رشته معماری داخلی
+                </a>
+            </div>
+            <div class="card">
+                <a href="farsh.html">
+                    <span class="icon">🏞</span> رشته صنایع دستی (فرش)
+                </a>
+            </div>
+            <div class="card">
+                <a href="akkasi.html">
+                    <span class="icon">📷</span> رشته عکاسی
+                </a>
+            </div>
+            <div class="card">
+                <a href="graphic.html">
+                    <span class="icon">🖼</span> رشته گرافیک
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

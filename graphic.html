@@ -1,0 +1,147 @@
+ 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشته گرافیک - هنرستان سلامت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #A8DADC; /* آبی ملایم */
+            --secondary-color: #F1FAEE; /* کرم روشن */
+            --accent-color: #E63946; /* برای تاکید */
+            --text-color: #1D3557; /* سرمه‌ای تیره */
+            --page-bg-graphic: url('https://via.placeholder.com/1500x800/e0f7fa/1d3557?text=Graphic+Design+Background+Pattern'); /* یک طرح کلی گرافیکی */
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            padding: 0;
+            margin: 0;
+            background: var(--page-bg-graphic) fixed center/cover; /* پس‌زمینه با تکرار و پوشش */
+            color: var(--text-color);
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative; /* برای قرار دادن هدر و فوتر */
+        }
+        /* لایه روی پس‌زمینه برای خوانایی بیشتر */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(241, 250, 238, 0.8); /* رنگ پس‌زمینه اصلی کمرنگ */
+            z-index: 1;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9); /* پس‌زمینه سفید نیمه‌شفاف برای محتوا */
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 3em;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.8em;
+            color: #457B9D;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* اجازه حرکت به سطر بعدی */
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .brochure-placeholder {
+            width: 800px;
+            height: 620px;
+            background: #E0E0E0; /* رنگ خاکستری روشن */
+            border: 3px dashed #B0BEC5; /* خط چین ظریف‌تر */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            color: #78909C;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+.brochure-placeholder img { width: 100%; height: 100%; display: block;}
+
+        .brochure-placeholder:hover {
+            transform: translateY(-5px);
+            background-color: #CFD8DC;
+        }
+.brochure-placeholder img1 { width: 70%; height: 100%; display: block;}
+
+        .brochure-placeholder:hover {
+            transform: translateY(-5px);
+            background-color: #CFD8DC;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 50px;
+            font-size: 1.3em;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>رشته گرافیک</h1>
+        <p>
+            رشته گرافیک در هنرستان سلامت، فرصتی بی‌نظیر برای پرورش خلاقیت بصری و تبدیل ایده‌های نو به طرح‌های چشم‌نواز است. در این رشته، دانش‌آموزان با اصول طراحی، رنگ‌شناسی، تصویرسازی، و نرم‌افزارهای تخصصی گرافیک آشنا می‌شوند و برای ورود به دنیای طراحی تبلیغات، بسته‌بندی، طراحی وب، و سایر حوزه‌های گرافیکی آماده می‌شوند.
+        </p>
+        
+        <h3>لیست دروس و بروشورها:</h3>
+
+
+<div class="gallery">
+ <div class="brochure-placeholder img1">
+<img src="image\grafic\grafic (1).jpg" alt="عکس">
+                </div>
+
+
+
+        </div>
+<div class="gallery">
+ 
+
+
+            <div class="brochure-placeholder img">
+<img src="image\grafic\grafic (3).png" alt="بروشور1">
+                 </div>
+            
+            <div class="brochure-placeholder">
+               <img src="image\grafic\grafic (4).png" alt="بروشور2">
+            </div>
+            <div class="brochure-placeholder">
+               <img src="image\grafic\grafic (1).png" alt="عکس 1">
+            </div>
+            <div class="brochure-placeholder">
+               <img src="image\grafic\grafic (2).png" alt="عکس 2">
+            </div>
+
+        </div>
